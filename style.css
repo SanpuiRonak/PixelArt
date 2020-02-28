@@ -1,0 +1,19 @@
+  
+div #dholder
+{
+    margin: auto;
+}
+td
+{
+    width: 15px;
+    height:15px;
+    border: 1px solid black;
+    padding: 0px;
+    
+}
+
+table
+{
+    border-collapse: collapse;
+    align="center";
+}
