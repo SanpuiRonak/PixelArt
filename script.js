@@ -1,6 +1,11 @@
+window.onload=function(){
+    genTable(10,10)
+}
+
 
 function draw()
 {
+    
     var a=document.getElementById('a');
     var b=document.getElementById('b');
     genTable (a.value,b.value)
