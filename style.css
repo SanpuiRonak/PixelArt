@@ -1,34 +1,37 @@
   
 body{
     display: flex;
-
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-div#input
+#holder
 {
-    display:flex;
-    flex-wrap: wrap; 
-    background-color:red;
-    
-
-}
-button#button
-{
-    
-    align-items: center;
-}
-
-div#holder
-{
-    background-color: brown;
+    flex-basis: 66%;
     display: flex;
-    align-items: center;
+    background-color: aqua;
     justify-content: center;
+    align-items: center;
+}
 
+.input
+{
+    flex-basis: 33%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 2;
+    align-items: center;
 
+}
+
+#input
+{
+    background-image:url(paper.png) ;
+    background-size: cover;
 }
 
 .break
@@ -37,19 +40,14 @@ div#holder
     height: 0;
 }
 
-.form{
-    background-color: blueviolet;
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
 
-.inputc{
-    background-color:black;
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+button
+{
+    border-radius: 0px;
+    box-shadow: 1.5px 2px 5px 0px rgba(0,0,0,0.75);
+    background-image:url(file:///home/ronak/Documents/PixelArt/paper.png) ;
+    background-size: cover;
+    border: 5px double black ;
+    height: 2rem;
+    widht: 
 }
-
