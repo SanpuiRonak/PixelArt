@@ -14,23 +14,27 @@ body{
     background-color: aqua;
     justify-content: center;
     align-items: center;
+    background-image:url(index.jpeg);
+    background-size: cover;
 }
 
 .input
 {
     flex-basis: 33%;
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-grow: 2;
     align-items: center;
+    background-image:url(index.jpeg);
+    background-size: cover;
+    
 
 }
 
 #input
 {
-    background-image:url(paper.png) ;
+    background-image:url(index.jpeg);
     background-size: cover;
 }
 
@@ -45,9 +49,9 @@ button
 {
     border-radius: 0px;
     box-shadow: 1.5px 2px 5px 0px rgba(0,0,0,0.75);
-    background-image:url(file:///home/ronak/Documents/PixelArt/paper.png) ;
-    background-size: cover;
+
     border: 5px double black ;
     height: 2rem;
-    widht: 
+    
+    
 }
