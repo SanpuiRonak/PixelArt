@@ -1,28 +1,78 @@
-window.onload= function ()
-{
-    var x = document.getElementsByTagName("td");
-    var a =document.getElementById("holder")
 
-    a.onclick= e=>
+function draw()
+{
+    var a=document.getElementById('a');
+    var b=document.getElementById('b');
+    genTable (a.value,b.value)
+    var tb=document.getElementById('table')
+    var x;
+    tb.onclick= e=>
     {
         console.log(e.target);
         console.log(e.target.tagName);
         console.log(e.target.id)
-        x[e.target.id-1].style.backgroundColor="black";
+        x=document.getElementById(e.target.id)
+        x.style.backgroundColor="black"
     }
 
-    a.ondragover= f=>
+    tb.ondragover= f=>
     {
         console.log(f.target);
         console.log(f.target.tagName);
         console.log(f.target.id)
-        x[f.target.id-1].style.backgroundColor="black";
+        x=document.getElementById(f.target.id)
+        x.style.backgroundColor="black"
     }
-    a.ondragstart= g=>
+    tb.ondragstart= g=>
     {
         console.log(g.target);
         console.log(g.target.tagName);
         console.log(g.target.id)
-        x[g.target.id-1].style.backgroundColor="black";
+        x=document.getElementById(g.target.id)
+        x.style.backgroundColor="black"
     }
+    return;
+}
+
+
+function genTable (a,b)
+{
+  let k=0;
+  var body = document.getElementById('holder');
+  var tbl = document.createElement('table');
+  body.innerHTML="";
+  tbl.id="table";
+  tbl.style.borderCollapse = "collapse";
+  tbl.style.borderStyle="solid";
+  tbl.style.borderColor="black";
+  tbl.style.borderWidth="1px";
+  
+  var tbdy = document.createElement('tbody');
+  for (var i = 0; i < a; i++) 
+  {
+    var tr = document.createElement('tr');
+    tr.style.borderWidth="1px";
+    tr.style.borderStyle="solid";
+    tr.style.borderColor="black";
+    for (var j = 0; j < b; j++) 
+    {
+     
+        var td = document.createElement('td');
+        td.id=k;
+        td.style.borderWidth="1px";
+        td.style.borderStyle="solid";
+        td.style.borderColor="black";
+        td.style.height="15px"
+        td.style.width="15px"
+        td.style.backgroundColor="white"
+        
+        td.appendChild(document.createTextNode(""));
+        tr.appendChild(td);
+        k++;
+    }
+    tbdy.appendChild(tr);
+  }
+  tbl.appendChild(tbdy);
+  body.appendChild(tbl);
+  return;
 }

@@ -4,133 +4,25 @@
     <script src=script.js></script>
     <title>webpage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 <body>
-    <div >
-        <div id="dholder">
-    <table id ="holder">
-        <tr>
-            <td id="001"></td>
-            <td id="002"></td>
-            <td id="003"></td>
-            <td id="004"></td>
-            <td id="005"></td>
-            <td id="006"></td>
-            <td id="007"></td>
-            <td id="008"></td>
-            <td id="009"></td>
-            <td id="010"></td>
-        </tr>
-        <tr>
-            <td id="011"></td>
-            <td id="012"></td>
-            <td id="013"></td>
-            <td id="014"></td>
-            <td id="015"></td>
-            <td id="016"></td>
-            <td id="017"></td>
-            <td id="018"></td>
-            <td id="019"></td>
-            <td id="020"></td>
-        </tr>
-        <tr>
-            <td id="021"></td>
-            <td id="022"></td>
-            <td id="023"></td>
-            <td id="024"></td>
-            <td id="025"></td>
-            <td id="026"></td>
-            <td id="027"></td>
-            <td id="028"></td>
-            <td id="029"></td>
-            <td id="030"></td>
-        </tr>
-        <tr>
-            <td id="031"></td>
-            <td id="032"></td>
-            <td id="033"></td>
-            <td id="034"></td>
-            <td id="035"></td>
-            <td id="036"></td>
-            <td id="037"></td>
-            <td id="038"></td>
-            <td id="039"></td>
-            <td id="040"></td>
-        </tr>
-        <tr>
-            <td id="041"></td>
-            <td id="042"></td>
-            <td id="043"></td>
-            <td id="044"></td>
-            <td id="045"></td>
-            <td id="046"></td>
-            <td id="047"></td>
-            <td id="048"></td>
-            <td id="049"></td>
-            <td id="050"></td>
-        </tr>
-        <tr>
-            <td id="051"></td>
-            <td id="052"></td>
-            <td id="053"></td>
-            <td id="054"></td>
-            <td id="055"></td>
-            <td id="056"></td>
-            <td id="057"></td>
-            <td id="058"></td>
-            <td id="059"></td>
-            <td id="060"></td>
-        </tr>
-        <tr>
-            <td id="061"></td>
-            <td id="062"></td>
-            <td id="063"></td>
-            <td id="064"></td>
-            <td id="065"></td>
-            <td id="066"></td>
-            <td id="067"></td>
-            <td id="068"></td>
-            <td id="069"></td>
-            <td id="060"></td>
-        </tr>
-        <tr>
-            <td id="071"></td>
-            <td id="072"></td>
-            <td id="073"></td>
-            <td id="074"></td>
-            <td id="075"></td>
-            <td id="076"></td>
-            <td id="077"></td>
-            <td id="078"></td>
-            <td id="079"></td>
-            <td id="080"></td>
-        </tr>
-        <tr>
-            <td id="081"></td>
-            <td id="082"></td>
-            <td id="083"></td>
-            <td id="084"></td>
-            <td id="085"></td>
-            <td id="086"></td>
-            <td id="087"></td>
-            <td id="088"></td>
-            <td id="089"></td>
-            <td id="090"></td>
-        </tr>
-        <tr>
-            <td id="091"></td>
-            <td id="092"></td>
-            <td id="093"></td>
-            <td id="094"></td>
-            <td id="095"></td>
-            <td id="096"></td>
-            <td id="097"></td>
-            <td id="098"></td>
-            <td id="099"></td>
-            <td id="100"></td>
-        </tr>
-    </table>
+    <div id = "input">
+        <form>
+            <label for "row">Enter No of Rows</label>
+            <input type="number" id="a" name= "row" min="2">
+            <br>
+            <label for="col">Enter No of Columns:</label>
+            <input type ="number" id= "b" name ="col" min="2">
+        </form>
+        <br>
+        <button id="button" onclick="draw()">submit</button>
+
     </div>
+
+    <div id="holder" >
+        
     </div>
 </body>
 </html>
