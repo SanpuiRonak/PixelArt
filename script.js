@@ -17,6 +17,7 @@ function draw()
         console.log(e.target.tagName);
         console.log(e.target.id)
         x=document.getElementById(e.target.id)
+        x.style.opacity="0.9"
         x.style.backgroundColor="black"
     }
 
@@ -26,6 +27,7 @@ function draw()
         console.log(f.target.tagName);
         console.log(f.target.id)
         x=document.getElementById(f.target.id)
+        x.style.opacity="0.9"
         x.style.backgroundColor="black"
     }
     tb.ondragstart= g=>
@@ -34,6 +36,7 @@ function draw()
         console.log(g.target.tagName);
         console.log(g.target.id)
         x=document.getElementById(g.target.id)
+        x.style.opacity="0.9"
         x.style.backgroundColor="black"
     }
     return;
@@ -70,6 +73,7 @@ function genTable (a,b)
         td.style.height="15px"
         td.style.width="15px"
         td.style.backgroundColor="white"
+        td.style.opacity="0.1"
         
         td.appendChild(document.createTextNode(""));
         tr.appendChild(td);

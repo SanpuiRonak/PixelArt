@@ -4,18 +4,21 @@ body{
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
+    height: 100vh;
+    background-image: url(bg.gif);
+    background-size: cover;
+
 }
 #holder
 {
     flex-basis: 66%;
     display: flex;
-    background-color: aqua;
     justify-content: center;
     align-items: center;
-    background-image:url(index.jpeg);
-    background-size: cover;
+    height: 100%;
 }
 
 .input
@@ -26,8 +29,7 @@ body{
     justify-content: space-around;
     flex-grow: 2;
     align-items: center;
-    background-image:url(index.jpeg);
-    background-size: cover;
+   
     
 
 }
@@ -36,6 +38,14 @@ body{
 {
     background-image:url(index.jpeg);
     background-size: cover;
+    height: 25%;
+    box-shadow: 1.5px 2px 5px 0px rgba(0,0,0,0.75);
+    
+    border: 20px solid #F4E3C9;
+    box-shadow: inset 0px 0px 0px 1px red;
+
+    margin-left: 5.5%;
+    margin-top: 11%;
 }
 
 .break
