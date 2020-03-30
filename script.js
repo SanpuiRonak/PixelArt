@@ -1,5 +1,5 @@
 window.onload=function(){
-    genTable(10,10)
+    draw()
 }
 
 
