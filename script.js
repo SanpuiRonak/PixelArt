@@ -21,23 +21,25 @@ function draw()
         x.style.backgroundColor="black"
     }
 
-    tb.ondragover= f=>
+    // tb.ondragover= f=>
+    // {
+    //     console.log(f.target);
+    //     console.log(f.target.tagName);
+    //     console.log(f.target.id)
+    //     x=document.getElementById(f.target.id)
+    //     x.style.opacity="0.9"
+    //     x.style.backgroundColor="black"
+    // }
+    tb.onmousedown=h=>
     {
-        console.log(f.target);
-        console.log(f.target.tagName);
-        console.log(f.target.id)
-        x=document.getElementById(f.target.id)
-        x.style.opacity="0.9"
-        x.style.backgroundColor="black"
-    }
-    tb.ondragstart= g=>
-    {
+        tb.onmousemove=g=>{
         console.log(g.target);
         console.log(g.target.tagName);
         console.log(g.target.id)
         x=document.getElementById(g.target.id)
         x.style.opacity="0.9"
         x.style.backgroundColor="black"
+        }
     }
     return;
 }
