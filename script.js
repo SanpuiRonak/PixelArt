@@ -1,15 +1,17 @@
-window.onload = function () {          //for genarating a default table on genaration
+window.onload = function () {
+  //for genarating a default table on genaration
   draw();
 };
 
 function draw() {
   var a = document.getElementById("a");
   var b = document.getElementById("b");
-  genTable(a.value, b.value);          //generating a table
+  genTable(a.value, b.value); //generating a table
   var tb = document.getElementById("table");
   var x;
 
-  tb.onclick = (e) => {           //handling click event
+  tb.onclick = (e) => {
+    //handling click event
     console.log(e.target);
     console.log(e.target.tagName);
     console.log(e.target.id);
@@ -17,9 +19,15 @@ function draw() {
     x.style.opacity = "0.9";
     x.style.backgroundColor = "black";
   };
-
-  tb.onmousedown = (h) => {       //handling drag event
+  let stillDown = false;
+  tb.onmouseup = () => {
+    stillDown = false;
+  };
+  tb.onmousedown = (h) => {
+    //handling drag event
+    stillDown = true;
     tb.onmousemove = (g) => {
+      if (!stillDown) return;
       console.log(g.target);
       console.log(g.target.tagName);
       console.log(g.target.id);
@@ -31,7 +39,8 @@ function draw() {
   return;
 }
 
-function genTable(a, b) {          //genarates a table of dimension a*b
+function genTable(a, b) {
+  //genarates a table of dimension a*b
   let k = 0;
   var body = document.getElementById("holder");
   var tbl = document.createElement("table");
